@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/values_medium">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/values_small"
+                android:layout_toLeftOf="@+id/btn_check"
+                android:hint="@string/et_hint_number"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rect_bg"
+                android:backgroundTint="@color/colorRed"
+                android:minHeight="0dp"
+                android:paddingLeft="@dimen/values_medium2"
+                android:paddingTop="@dimen/values_regular"
+                android:paddingRight="@dimen/values_medium2"
+                android:paddingBottom="@dimen/values_regular"
+                android:text="@string/btn_label_check"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_regular_small"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tv_label"
+                android:layout_below="@+id/et_input">
+
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/values_medium"
+                    android:fontFamily="@font/overpass_regular"
+                    android:gravity="center"
+                    android:text="@string/tv_label_sample_1"
+                    android:textColor="@color/colorTextGrey_75"
+                    android:textSize="@dimen/font_medium"
+                    android:textStyle="normal" />
+            </ScrollView>
+
+
+            <TextView
+                android:id="@+id/tv_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/overpass_regular"
+                android:gravity="center"
+                android:paddingTop="@dimen/values_regular"
+                android:text="@string/tv_label_sample_7"
+                android:textColor="@color/colorTextGrey_75"
+                android:textSize="@dimen/font_regular_small"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

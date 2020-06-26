@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Test-Grid</string>
+    <string name="api_url_category">http://private-eecc18-yudi2.apiary-mock.com/category</string>
+
+    <string name="login_error_title">Unknown Error</string>
+    <string name="login_error_message">Failed get data</string>
+
+    <string name="home_data_kosong_1">Data kosong</string>
+    <string name="home_data_kosong_2">Gagal mendapatkan data</string>
+
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Batal</string>
+
+    <string name="toolbar_title_1">Test GridView</string>
+
+    <!-- Toolbar -->
+    <string name="toolbar_search_hint">Search</string>
+
+    <!-- Tabs -->
+    <string name="tab_title_0">0</string>
+
+    <!-- Buttons -->
+    <string name="btn_label_status">Following</string>
+    <string name="btn_label_check">Check</string>
+
+    <!-- Labels -->
+    <string name="tv_label_result">Results</string>
+
+    <!-- Hint -->
+    <string name="et_hint_number">Number(max 100)</string>
+
+    <string name="tv_label_sample_0">https://appinventiv.com/wp-content/uploads/sites/1/2018/10/banner-Android-9-Pie-vs-Android-8-Oreo-%E2%80%93-The-War-of-the-OS-01.png</string>
+    <string name="tv_label_sample_1">Yudi</string>
+    <string name="tv_label_sample_2">\@\yudirahmat / Indonesia / Man</string>
+    <string name="tv_label_sample_3">14632</string>
+    <string name="tv_label_sample_4">Followers</string>
+    <string name="tv_label_sample_5">365</string>
+    <string name="tv_label_sample_6">Following</string>
+    <string name="tv_label_sample_7">Created by : Yudi Rahmat</string>
+</resources>
