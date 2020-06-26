@@ -13,9 +13,9 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import com.yudi.test2.R
+import com.yudi.test2.api.interfaces.ScrollListener
 import com.yudi.test2.app.base.BaseFragment
 import com.yudi.test2.app.common.setImage
-import com.yudi.test2.api.interfaces.ScrollListener
 import com.yudi.test2.databinding.MainFragmentBinding
 
 
@@ -95,6 +95,7 @@ class MainFragment : BaseFragment() {
                 return 2
             }
         }
+        binding.viewpager.isUserInputEnabled = false // disable swipe
     }
 
     override fun onAttach(context: Context) {
