@@ -77,7 +77,7 @@ class DefaultMonitor @JvmOverloads constructor(
             return
         }
         Log.i("Monitor", "Unregistering")
-        context.unregisterReceiver(connectivityReceiver)
+        context?.unregisterReceiver(connectivityReceiver)
         isRegistered = false
     }
 

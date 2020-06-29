@@ -68,7 +68,8 @@ class BaseActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        InternetManager.from(this)?.stop()
+
+        try { InternetManager?.from(this)?.stop() } catch (e: Exception) { e.printStackTrace() }
     }
 
 }

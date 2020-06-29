@@ -51,7 +51,7 @@ class InternetManager private constructor(context: Context) {
         private var InternetManager: InternetManager? = null
 
         fun from(context: Context): InternetManager? {
-            if (InternetManager == null) {
+            if (context != null && InternetManager == null) {
                 synchronized(lock) {
                     if (InternetManager == null) {
                         InternetManager = InternetManager(context)
